@@ -1,14 +1,13 @@
 import React from "react";
+import "./style.css";
 
 function Footer() {
-  return (
-    <footer>
-      <hr />
-      <p className="pull-right">
-        <i className="fab fa-github" /> Proudly built using React.js
-      </p>
-    </footer>
-  );
+  const year = new Date().getFullYear();
+return (
+  <footer className="footer text-center">
+    <span>©Daniel Mestawat {year}</span>
+  </footer>
+);
 }
 
 export default Footer;
